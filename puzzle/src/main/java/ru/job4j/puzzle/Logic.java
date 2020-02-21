@@ -74,6 +74,7 @@ public class Logic {
         for (int i = 0; i < table.length; i++) {
             if (monoHorizontal(table, i) || monoVertical(table, i)) {
                 result = true;
+                break;
             }
         }
         return result;
@@ -84,6 +85,7 @@ public class Logic {
         for (int i = 0; i < board.length; i++) {
             if (board[row][i] != 1) {
                 result = false;
+                break;
             }
         }
         return result;
@@ -94,6 +96,7 @@ public class Logic {
         for (int i = 0; i < board.length; i++) {
             if (board[i][column] != 1) {
                 result = false;
+                break;
             }
         }
         return result;
